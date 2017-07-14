@@ -1,6 +1,6 @@
-# _Our Pig Latin Translator Site_
+# _Ping-Pong Site_
 
-#### _This site will translate english to pig latin, {07.12.2017}_
+#### _This site will take a number from a user and return a range of numbers, {07.14.2017}_
 
 #### By _**Haneen Abu-Khater**_
 
@@ -26,6 +26,9 @@ Numbers divisible by 15 are replaced with "ping-pong"_
   * _Input: 5_
   * _Output: [1,2,3,4,pong]_
 * _The program replaces numbers divisible by 15 with the word 'ping-pong'_
+* _The program will display back any number that is not divisible by 3, 5, or 15_
+  * _Input: 4_
+  * _Output: 4 along with other characters but the 4 will not change_
 
 ## Known Bugs
 
@@ -43,4 +46,4 @@ _HTML, CSS, Bootstrap, JS, jQuery_
 
 *Mit*
 
-Copyright (c) 2017 **_Haneen Abu-Khater and David Cuthell_**
+Copyright (c) 2017 **_Haneen Abu-Khater_**
