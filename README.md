@@ -2,44 +2,30 @@
 
 #### _This site will translate english to pig latin, {07.12.2017}_
 
-#### By _**Haneen Abu-Khater and David Cuthell**_
+#### By _**Haneen Abu-Khater**_
 
 ## Description
 
-_This website will prompt the user for input in english. It will then analyze the user's input and compute the equivalent word or phrase in pig latin. The website will then display the resulting word or phrase in pig latin_
+_This website will prompt the user for input of a number. It will then analyze the user's input and compute the series of numbers. The website will then display the resulting a range of numbers from 1 to the chosen number with the following exceptions:
+Numbers divisible by 3 are replaced with "ping"
+Numbers divisible by 5 are replaced with "pong"
+Numbers divisible by 15 are replaced with "ping-pong"_
 
 ## Specs
 
-* _The program does nothing to non-alphabetic characters_
+* _The program does nothing to alphabetic characters_
+  * _Input: A_
+  * _Output: A_
+* _The program can count up to the provided number_
+  * _Input: 2_
+  * _Output: [1, 2]_
+* _The program replaces numbers divisible by 3 with the word 'ping'_
   * _Input: 3_
-  * _Output: 3_
-* _The program adds "way" to a single letter word that is a vowel_
-  * _Input: a_
-  * _Output: away_
-* _The program adds "ay" to a single letter word that is a consonant_
-  * _Input: t_
-  * _Output: tay_
-* _The program adds "way" to a multi-letter word that begins with a vowel_
-  * _Input: america_
-  * _Output: americaway_
-* _For a multi-letter word that begins with one consonant, move the consonant to the end and add "ay"_
-  * _Input: cool_
-  * _Output: oolcay_
-* _For a multi-letter word that begins with more than one consonant, move those consonants to the end and add "ay"_
-  * _Input: the_
-  * _Output: ethay_
-* _For a multi-letter word that begins with "qu", move "qu" to the end and add "ay"_
-  * _Input: question_
-  * _Output: estionquay_
-* _For a multi-letter word that begins with one or more consonants followed by "qu", move those consonants to the end, then move "qu", then add "ay"_
-  * _Input: squeal_
-  * _Output: ealsquay_
-* _For words beginning with "y" followed by a vowel, move "y" the end and add "ay"_
-  * _Input: yams_
-  * _Output: amsyay_
-* _For words beginning with "y" followed by one or more consonants, move "y", then those consonants, then add "ay"_
-  * _Input: ytterbium_
-  * _Output: erbiumyttay_
+  * _Output: [1, 2, ping]_
+* _The program replaces numbers divisible by 5 with the word 'pong'_
+  * _Input: 5_
+  * _Output: [1,2,3,4,pong]_
+* _The program replaces numbers divisible by 15 with the word 'ping-pong'_
 
 ## Known Bugs
 
