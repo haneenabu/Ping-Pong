@@ -1,5 +1,8 @@
+function Calculator(skinName){
+  this.skin = skinName;
+}
 //Business Logic
-function pingProducer(userInput) {
+Calculator.prototype.pingProducer= function(userInput) {
   var newArr = [];
   for (var i = 1; i <= userInput; i++) {
     if (i % 15 === 0){
@@ -12,14 +15,15 @@ function pingProducer(userInput) {
       newArr.push(i);
     }
   }
-  arrToList(newArr);
-}
+  return newArr;
+};
+exports.calculatorModule = Calculator;
 //enter elements into an ol list
-function arrToList(newArr) {
-  for (var x = newArr.length - 1; x >=0 ; x--) {
-    var list = document.getElementById('ulList');
-    var li = document.createElement('li');
-    li.innerHTML = newArr[x];
-    list.insertBefore(li, list.firstChild)
-  }
-}
+// function arrToList(newArr) {
+//   for (var x = newArr.length - 1; x >=0 ; x--) {
+//     var list = document.getElementById('ulList');
+//     var li = document.createElement('li');
+//     li.innerHTML = newArr[x];
+//     list.insertBefore(li, list.firstChild)
+//   }
+// }
