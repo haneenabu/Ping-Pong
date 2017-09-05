@@ -30,6 +30,9 @@ ul {
 #result {
   display: none;
 }
-/*#mult{
+#mult{
   display: none;
-}*/
+}
+#div{
+  display: none;
+}

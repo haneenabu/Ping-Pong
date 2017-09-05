@@ -24,6 +24,12 @@ Calculator.prototype.multiply = function (mult1, mult2) {
   return total;
 };
 
+Calculator.prototype.divide = function (div1, div2) {
+  var total = 0;
+  total= div1 / div2;
+  return total;
+};
+
 exports.calculatorModule = Calculator;
 //enter elements into an ol list
 // function arrToList(newArr) {

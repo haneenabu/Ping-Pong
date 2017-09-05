@@ -6,7 +6,7 @@ $(document).ready(function() {
     var mult2 = $('#mult2').val();
     var simpleCalculator = new Calculator("electric blue");
     var total = simpleCalculator.multiply(mult1, mult2);
-    $('#mult').append(total);
-    // $('#mult').show();
+    $('#multNum').append(total);
+    $('#mult').show();
   });
 });
