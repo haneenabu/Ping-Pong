@@ -35,18 +35,28 @@
         <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
       </ol>
       <br>
+      <form id="signup">
+        <label for="email">Enter your email:</label>
+        <input id="email" type="text">
+        <button type="submit">Submit</button><br><br>
+      </form>
+      <form id="multiply">
+        <label for="mult1"> Enter two numbers you would like to multiply:</label>
+        <input id="mult1" type="number">
+        <input id="mult2" type="number">
+        <button type="submit" name="button">Multiply</button><br><br>
+      </form>
+      <div class="container" id="mult">
+        <p>The total is: </p>
+      </div>
       <form id="gameForm">
         <div class="form-group">
-          <label for="number">Enter your number here: </label>
+          <label for="number">Enter your ping pong number here: </label>
           <input id="number" type="text">
         </div>
         <button type="submit" class="btn">Ping Pong!</button>
       </form>
-      <form id="signup">
-        <label for="email">Enter your email:</label>
-        <input id="email" type="text">
-        <button type="submit">Submit</button>
-    </form>
+
       <div class="container">
         <div id="result">
           <p>Here are your Ping Pong results: <span id="pingPong"></span></p>
