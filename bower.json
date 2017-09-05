@@ -1,0 +1,15 @@
+{
+  "name": "ping-pong",
+  "description": "#### _This site will take a number from a user and return a range of numbers, {07.14.2017}_",
+  "main": "index.js",
+  "authors": [
+    "Haneen AbuKhater <abukhater.haneen@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/haneenabu/Ping-Pong",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1"
+  }
+}

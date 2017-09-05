@@ -6,7 +6,7 @@ $(document).ready(function() {
     var div2 = $('#div2').val();
     var simpleCalculator = new Calculator("light blue");
     var total = simpleCalculator.divide(div1, div2);
-    $('#divNum').append(total);
+    $('#divNum').text(total);
     $('#div').show();
   });
 });
@@ -19,7 +19,7 @@ $(document).ready(function() {
     var mult2 = $('#mult2').val();
     var simpleCalculator = new Calculator("electric blue");
     var total = simpleCalculator.multiply(mult1, mult2);
-    $('#multNum').append(total);
+    $('#multNum').text(total);
     $('#mult').show();
   });
 });
@@ -29,7 +29,7 @@ var Calculator = require('./../js/scripts.js').calculatorModule;
 $(document).ready(function(){
   onsubmit="setTimeout(function () { window.location.reload(); }, 10)";
   $("#gameForm").submit(function(event){
-    
+
     var input = $("input#number").val();
     var simpleCalculator = new Calculator("hot pink");
     var output = simpleCalculator.pingProducer(input);
@@ -49,4 +49,8 @@ $(document).ready(function(){
     $('#signup').hide();
     $('#pingPong').prepend('<p>Thank you, ' + email + ' has been added to our list!</p>');
   });
+});
+
+$(document).ready(function () {
+  $('#time').text(moment());
 });

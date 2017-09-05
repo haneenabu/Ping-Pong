@@ -3,7 +3,7 @@ var Calculator = require('./../js/scripts.js').calculatorModule;
 $(document).ready(function(){
   onsubmit="setTimeout(function () { window.location.reload(); }, 10)";
   $("#gameForm").submit(function(event){
-    
+
     var input = $("input#number").val();
     var simpleCalculator = new Calculator("hot pink");
     var output = simpleCalculator.pingProducer(input);

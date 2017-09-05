@@ -6,7 +6,7 @@ $(document).ready(function() {
     var div2 = $('#div2').val();
     var simpleCalculator = new Calculator("light blue");
     var total = simpleCalculator.divide(div1, div2);
-    $('#divNum').append(total);
+    $('#divNum').text(total);
     $('#div').show();
   });
 });
